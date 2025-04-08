@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      EA 22 Y 28 Plugins
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,6 +14,7 @@
   </ion-header>
 
   <div id="container">
+    <p>Melisa Arias Ortega 6C #5</p>
     <h2>Open Browser</h2><br>
     <ion-button expand="full" (click)="openCapacitorSite()">Open Browser</ion-button><br>
 
@@ -24,6 +25,13 @@
     <h2>Dialog</h2><br>
     <ion-button expand="full" (click)="showAlert()">Show alert!</ion-button><br>
     <ion-button expand="full" (click)="showConfirm()">Press Here</ion-button><br>
+
+    <h2>Device</h2><br>
+    <ion-button expand="full" (click)="logDeviceInfo()">Show Device info</ion-button><br>
+    <ion-button expand="full" (click)="logBatteryInfo()">Show Battery info</ion-button><br>
+    <!--No se ve nada a simple vista en estos, pero en la consola si.-->
+
+    <p>Checar los comentarios en mi codigo para explicacion de algunas cosas de las plugins.</p>
 
   </div>
 </ion-content>

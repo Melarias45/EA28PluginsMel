@@ -3,6 +3,8 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/a
 import { Browser } from '@capacitor/browser';
 import { AppLauncher } from '@capacitor/app-launcher';
 import { Dialog } from '@capacitor/dialog';
+import { Device } from '@capacitor/device';
+
 
 
 
@@ -54,5 +56,17 @@ export class HomePage {
 
     console.log('Name:', value);
     console.log('Cancelled:', cancelled);
+  };
+
+  logDeviceInfo = async () => {
+    const info = await Device.getInfo();
+
+    console.log(info);
+  };
+
+  logBatteryInfo = async () => {
+    const info = await Device.getBatteryInfo();
+
+    console.log(info);
   };
 }
