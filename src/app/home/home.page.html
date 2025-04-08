@@ -14,7 +14,16 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h2>Open Browser</h2><br>
+    <ion-button expand="full" (click)="openCapacitorSite()">Open Browser</ion-button><br>
+
+    <h2>App Launcher</h2><br>
+    <ion-button expand="full" (click)="openPortfolioPage()">Open PortfolioPage</ion-button><br>
+    <!--No hay ningun portafolio configurado en la app, pero la funcion funciona ;)-->
+
+    <h2>Dialog</h2><br>
+    <ion-button expand="full" (click)="showAlert()">Show alert!</ion-button><br>
+    <ion-button expand="full" (click)="showConfirm()">Press Here</ion-button><br>
+
   </div>
 </ion-content>
